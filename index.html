@@ -1,18 +1,21 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<style>
-			body { font: normal 24px Arial; text-align: center; }
+			body { font: normal 24px Arial; text-align: center; background-image: url("https://image.freepik.com/free-vector/white-abstract-background-theme_23-2148830883.jpg");}
 		</style>
 	</head>
 	<body>
+	
 		<h1>Data Science Project</h1>
 		<h2>Traffic Forecasting & Analysis</h2>
-		<h4>By: Malick Sidibe, Email: Malick.Sidibe70@myhunter.cuny.edu </h4>
+		<h4>By: Malick Sidibe </h4> 
+		<h5>Email: Malick.Sidibe70@myhunter.cuny.edu </h5>
 
 	<img alt="nyc_traffic_image" src="https://www1.nyc.gov/html/dot/images/motorist/gridlockalert-midmanhattan.jpg"
 	     </em></p>
+	
+	<h3>Overview</h3>
 	
 	<p><em>As an everyday challenge that will keeps growing, my project will try to predict traffic patterns in New York City. This will hopefully lead to a better understanding of future traffic conditions based on historical observations..
 	</em></p>
@@ -25,7 +28,7 @@
   The most common existing solution is to use the traditional four steps transportation modeling which are (Trip generation, Trip distribution, Mode choice and Route assignment). Another solution is to use Travel demand modeling involves a series of mathematical models that attempt to simulate human behavior while traveling.
     </p>
     
-    <h3>Overview and Data</h3>
+    <h3>Data and Analysis</h3>
     
     <p>
   I created and maintain an  dataset with actual driven trips for analysis purposes. The ability to match and analyze large volumes of data allowed me to make traffic predictions. Together, this creates the most accurate and up-to-date picture of the road for the most accurate and advanced traffic prediction available.
@@ -40,6 +43,23 @@ The general conclusion came about analyzing the dataset revealing that the LONG 
 	Multiple segments of the expressway appear within the top 10% of the city with nearly 10 millions vehicles utilizing it. This seems to make sense as the expressway (aka I-495) is an important road for trucks and cars getting from Manhattan and Queens to Long Island.
     </p>
     
+    <h3>Techniques</h3>
+    
+    <p>
+    The programs used for this project include Visual Studio and Jyputer Notebook. I first loaded the dataset and cleaned it up. Then I introduced multiple new columns for aggregating data faster. They include,
+    </p>
+    
+    <ul>
+    <li >4 (6 hour period) columns
+    <li>2 (12 hour period) columns
+    <li>1 (24 hour period) column
+    <li>A morning and evening rush hour columns
+    </ul>
+    
+    <p>
+    After that I created several different datasets using SQL based on the year given and/or using rush hours times as well. I also created Top 10% values for multiple columns and used seaborn to visualize my data with graphs. Additionally, while there wasn't enough time,' I tried to manually add a borough column for every roadway to plot using matplotlib.
+    </p>
+    
     <h3>Citations</h3>
  
     <ol>
@@ -52,6 +72,9 @@ The general conclusion came about analyzing the dataset revealing that the LONG 
     
     <li style="text-align: left"><cite>sigspatial:</cite> <a href="https://www.sigspatial.org/wp-content/uploads/special-issues/10/1/04-SIGSPATIAL_Newsletter_March-Li-Shahabi.pdf">A Brief Overview of Machine Learning Methods for
 Short-term Traffic Forecasting and Future Directions</a>
+    </li>
+    
+    <li style="text-align: left"><cite>Kentucky DOT:</cite> <a href="https://transportation.ky.gov/Planning/Documents/traffic_forecasting_brochure.pdf">Traffic Forecasting FAQ</a>
     </li>
     
     </ol>
